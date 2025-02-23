@@ -2,7 +2,6 @@ package com.java.agendadortarefas.infrastructure.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ import java.util.Date;
 public class JwtUtil {
 
     // Chave secreta usada para assinar e verificar tokens JWT
-    private final String secretKey = String.valueOf(Keys.secretKeyFor(SignatureAlgorithm.HS256));
+    private final String secretKey = "chave-aleatoria-que-criei-sem-nenhuma-criatividade-somente-para-servir-como-chave";
 
 
     // Extrai as claims do token JWT (informações adicionais do token)
